@@ -1,20 +1,14 @@
 programa {
   funcao inicio() {
-    inteiro n, i, a, b, c
+    inteiro socio
 
-   escreva("Digite a quantidade de números da sequência de Fibonacci: ")
-   leia(n)
+    escreva("Você é sócio? \nDigite 1 para sim e 2 para não: ")
+    leia(socio)
 
-   a = 0
-   b = 1
+    se(socio == 1 )
+    escreva("Acesso permitido")
+    senao
+    escreva("Acesso negado")
 
-   escreva("Sequência de Fibonacci com ", n," termos:\n", a," ", b)
-
-   para(i=3; i<=n; i++){
-    c = a + b
-    escreva(" ",c," ")
-    a = b
-    b = c 
-   }
   }
 }

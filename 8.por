@@ -1,12 +1,13 @@
 programa {
   funcao inicio() {
-    inteiro x, y, z
-    escreva("Digite um número(tabuada 1 ao 10): ")
-    leia(x)
+    inteiro v
+    
+    escreva("Informe a sua velocidade(km/h): ")
+    leia(v)
 
-    para(y=1; y<=10; y++) {
-      z = x * y
-      escreva(x, "x", y," = ", z, "\n")
-    }
+    se(v > 80)
+    escreva("MULTADO")
+    senao
+    escreva("Dentro do limite")
   }
 }

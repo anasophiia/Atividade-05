@@ -1,21 +1,17 @@
 programa {
   funcao inicio() {
-   inteiro a, b, resto, x, y, mmc
- 
-    escreva("Informe o primeiro número: ")
-    leia(a)
-    escreva("Informe o segundo número: ")
-    leia(b)
+    real media, frequencia
 
-x = a
-y = b
-     
-    enquanto (b != 0) {
-      resto = a % b
-      a = b
-      b = resto
-    }
-    mmc = (x * y)/a
-    escreva("MMC = ", mmc)
+    escreva("Informe sua media: ")
+    leia(media)
+    escreva("Informe sua frequência: ")
+    leia(frequencia)
+
+    se(media >= 7.0  e frequencia >= 75)
+    escreva("APROVADO")
+    senao
+    escreva("REPROVADO")
+
+
   }
 }

@@ -1,18 +1,13 @@
 programa {
   funcao inicio() {
-    inteiro x, y, i
-
-      escreva("Digite um número para sua soma: ")
-      leia(x)
-      y=0
-
-    para(i=1; i<=x; i++) {
-      y=y+i
-
-       
-    }
-    escreva (y, "\n")
-    }
-
+      real medida
+    
+    escreva("Informe a medida da peça(cm): ")
+    leia(medida)
+    
+    se(medida >=5 e medida <=5.5)
+    escreva("PEÇA APROVADA")
+    senao
+    escreva("PEÇA REJEITADA")
   }
 }

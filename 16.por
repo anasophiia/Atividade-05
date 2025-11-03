@@ -1,19 +1,16 @@
 programa {
   funcao inicio() {
-    inteiro a, b, resto
- 
-    escreva("Informe o primeiro número: ")
-    leia(a)
-    escreva("Informe o segundo número: ")
-    leia(b)
-     
-    enquanto (b != 0) {
-      resto = a % b
-      a = b
-      b = resto
-    }
-    escreva("MDC = ", a)
+    real renda, spc
 
+    escreva("Informe sua renda mensal: R$")
+    leia(renda)
+    escreva("Você tem restrições no SPC?(Digite 1 para sim e 2 para não):")
+    leia(spc)
+
+    se((renda >= 2000) e spc == 2)
+    escreva("Empréstimo aprovado")
+    senao
+    escreva("Empréstimo negado")
 
   }
 }

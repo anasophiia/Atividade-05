@@ -1,17 +1,11 @@
 programa {
   funcao inicio() {
-    inteiro numero, invertido, resto
-    invertido = 0 
-
-    escreva("Digite um número inteiro: ")
-    leia(numero)
-
-    enquanto (numero > 0) {
-      resto = numero % 10 
-      invertido = invertido * 10 + resto
-      numero = numero / 10 
-    }
-
-    escreva("O número invertido é: ", invertido)
+    inteiro a 
+    escreva("Digite o valor:", a)
+    leia(a)
+    se(a % 2 == 0)
+    escreva(" PAR")
+    senao se(a % 2 == 1)
+    escreva(" IMPAR")
   }
 }

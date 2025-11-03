@@ -1,21 +1,13 @@
 programa {
   funcao inicio() {
-    inteiro x, i, resultado
-    resultado = 0
+    inteiro valor
+    
+    escreva("Informe o valor da sua compra: R$")
+    leia(valor)
 
-    escreva("Digite um número para saber se é primo: ")
-    leia(x)
-
-    para(i=2; i<=x/2; i++) {
-      se(x % i == 0){
-        resultado = resultado + 1
-        pare
-      }
-    }
-
-    se(resultado == 0)
-    escreva(x, " É um Número primo")
+    se(valor > 100)
+    escreva("Ganhou frete gratis")
     senao
-    escreva(x, " Não é um número primo")
+    escreva("Não ganhou frete gratis")
   }
 }
